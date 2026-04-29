@@ -22,5 +22,29 @@ int main(){
     cout << isFemale << "\n";
     cout << isTrue << "\n";
     cout << isFalse << "\n";
+
+    //sizeof OPERATOR just like typeof OPERATOR!!
+    //HERE SIZE IS A MAIN FACTOR BCOZ HERE MEMORY MANAGEMENT IS SOMETHING 
+    //WE DO IT OURSELVES!!
+    cout << sizeof(mark) <<"\n";
+    cout << sizeof(marks) <<"\n";
+    cout << sizeof(markss) <<"\n";
+    cout << sizeof(value) <<"\n";
+    cout << sizeof(isMale) << "\n";
+ 
+    //SAME NAME VARIABLE REDEFINITION ALLOWED IN DIFFERENT BLOCKS!!
+    int var = 12;
+    // int var = 45; //REDEFINITION NOT ALLOWED!!
+    {
+        int var = 34; //THIS IS A DIFFERENT VARIABLE DEFINITION IN BLOCK!!
+        //THIS IS ALLOWED AND WORKS!!
+        cout << var << "\n";
+    } 
+
+    {
+        int var = 85;
+        cout << var << "\n";
+    }
+    cout << var << "\n";
     return 0;
 }
