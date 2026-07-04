@@ -13,8 +13,8 @@ int main(){
     cin >> num;
 
     if(num == 0){
-        val = "0";
-        cout << val;
+        cout << "0";
+        return 0;
     }
 
     while(num != 0){
