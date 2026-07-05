@@ -17,7 +17,7 @@ int main(){
     while(num != 0){
         rem = num % 2;
         num = num / 2;
-        binaryval = rem * pow(10, i++) + binaryval;
+        binaryval = rem * round(pow(10, i++)) + binaryval;
     }
     
     cout << "The binary value of the decimal number is: ";
