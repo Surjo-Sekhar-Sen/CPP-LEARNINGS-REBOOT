@@ -21,5 +21,6 @@ int  main(){
         sum = sum + arr[i];
     }
     cout << "Sum of the array: " << sum;
+    delete[] arr;
     return 0;
 }
