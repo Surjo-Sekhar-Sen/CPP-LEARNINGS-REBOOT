@@ -2,7 +2,6 @@
 using namespace std;
 
 int main(){
-    int size = 6;
     int arr1[7] = {1, 2, 3, 4, 5, 6, 7};
 
     int R = 7, C = 1;
