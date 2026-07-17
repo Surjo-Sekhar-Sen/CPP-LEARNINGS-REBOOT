@@ -33,7 +33,8 @@ void anagram(string strr1, string strr2){
         }
     }
     else{
-        cout << "The length of both the sentences don't match!!" << endl;  
+        cout << "The length of both the sentences don't match!!" << endl;  //FOR ONE WORD THIS IS FINE!!
+        //BUT FOR WORDS LIKE DORMITORY AND DIRTY BAG WHERE LENGTHS ARE DIFFERENT IT WON'T WORK!!
         cout << "Therefore it is not an anagram!!" << endl;
     }
     return;
