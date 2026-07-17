@@ -1,12 +1,22 @@
 #include <iostream>
 #include <string>
+#include <cctype>
 using namespace std;
 
 string upper2lowercase(string str){
     int length = str.length();
     string strref;
     for(int i = 0; i <= (length-1); i++){
-        strref.push_back(str[i] - 'A' + 'a');
+        if(isalpha(str[i])){
+            if(str[i] == ' '){
+                strref.push_back(' ');
+            }else{
+                strref.push_back(str[i] - 'A' + 'a');
+            }
+        }
+        else{
+            strref.push_back(str[i]);
+        }
     }
     return strref;
 }
@@ -15,7 +25,17 @@ string lower2uppercase(string str){
     int length = str.length();
     string strref;
     for(int i = 0; i <= (length-1); i++){
-        strref.push_back(str[i] - 'a' + 'A');
+        if(isalpha(str[i])){
+            if(str[i]  == ' '){
+                strref.push_back(' ');
+            }
+            else{
+                strref.push_back(str[i] - 'a' + 'A');
+            }
+        }
+        else{
+            strref.push_back(str[i]);
+        }  
     }
     return strref;
 }
