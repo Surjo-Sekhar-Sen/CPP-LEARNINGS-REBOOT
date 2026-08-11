@@ -1,12 +1,12 @@
 #include <iostream>
 using namespace std;
 
-int updatevalue(int &x){
+int updatevalue(int &n){
     //HERE THE ACTUAL VALUE OF THE ARGUMENT PASSED IS TAKEN
     //AS THE VARIABLE'S MEMORY ADDRESS IS GIVEN!!
-    cout << "Value of num in updatevalue Function: " << x << endl;
-    x = x + 10;
-    return x;
+    cout << "Value of num in updatevalue Function: " << n<< endl;
+    n = n + 10;
+    return n;
 }
 
 int main(){

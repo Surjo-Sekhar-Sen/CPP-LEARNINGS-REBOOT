@@ -2,14 +2,14 @@
 #include <string>
 using namespace std;
 
-int getSum(int x, int y){
-    int sum = x + y;
-    return sum;
-}
-
 void nameMultiple(string name){
     cout << "Name is: " << name;
     return; //WE CAN WRITE RETURN HERE BUT CANNOT PUT ANYTHING IN IT!!
+}
+
+int getSum(int x, int y){
+    int sum = x + y;
+    return sum;
 }
 
 int table(int num){
