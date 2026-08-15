@@ -1,7 +1,7 @@
 #include <iostream>
 #include <cstring>
 using namespace std;
-
+//VERY INTERESTING!!
 int main(){
     int n;
     cout << "Enter the size of the array: ";
