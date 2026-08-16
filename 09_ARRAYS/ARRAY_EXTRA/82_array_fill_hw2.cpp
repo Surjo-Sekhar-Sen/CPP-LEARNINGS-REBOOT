@@ -1,6 +1,7 @@
 #include <iostream>
 #include <algorithm>
 using namespace std;
+//ALTERNATIVE TO USING memset!!
 
 int main(){
     int n;
