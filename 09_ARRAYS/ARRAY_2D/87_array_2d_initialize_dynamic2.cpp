@@ -8,6 +8,7 @@ int main(){
     cout << "Enter the number of columns in the array: ";
     cin >> m;
 
+    //ARRAY OF POINTERS!!
     int** arr = new int*[n];
 
     for(int i = 0; i <= (n-1); i++){
