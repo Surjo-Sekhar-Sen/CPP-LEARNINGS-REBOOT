@@ -2,7 +2,7 @@
 #include <cstring>
 #include <string>
 using namespace std;
-
+//IMPORTANT!!
 int main(){
     string str = "Surjo";
     char name[6];
