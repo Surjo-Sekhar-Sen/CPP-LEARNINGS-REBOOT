@@ -3,7 +3,7 @@ using namespace std;
 
 void comparearr(char arra[], char arrb[]){
     int a = 0, b = 0;
-    while(arra[a] != '\0' || arrb[b] != 0){
+    while(arra[a] != '\0' || arrb[b] != '\0'){
         if(arra[a] == arrb[b]){
             cout << "Array 1 matches with Array 2 at: " << arra[a] << endl;
             a++;
