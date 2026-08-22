@@ -8,4 +8,4 @@ int main(){
     cout << arr[0] << " " << arr[1] << " " << arr[2] << endl;
     cout << arrstr[0] << " " << arrstr[1] << " " << arrstr[2];
     return 0;
-}
+} 
