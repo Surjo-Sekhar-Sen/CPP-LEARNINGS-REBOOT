@@ -13,7 +13,7 @@ int main(){
     char val3 = str1.at(3); //FINDS THE CHARACTER AT THE SPECIFIC INDEX!!
     cout << val3 << " ";
     // char val4 = str1.at(5); //DOES NOT RETURN NULL, AND ALSO FOR OUT OF BOUND CASES,
-    //IT THROWWS AN ERROR UNLIKE GIVING GARBAGE VALUE!!
+    //IT THROWS AN ERROR UNLIKE GIVING GARBAGE VALUE!!
     // cout << int(val4) << endl;
 
     char val5 = str1.front(); //RETURNS THE FIRST CHARACTER!!
