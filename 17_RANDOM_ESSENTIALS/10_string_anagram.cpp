@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cctype>
 #include <string>
 using namespace std;
 
@@ -11,6 +12,17 @@ int countval(string str){
         count++;
     }
     return count;
+}
+
+string up2low(string str){
+    for(int i = 0; i <= (str.length() - 1); i++){
+        if(isalpha(str[i]) != false){
+            if((str[i] >= 'A') && (str[i] <= 'Z')){
+                str[i] = str[i] - 'A' + 'a';
+            }
+        }
+    }
+    return str;
 }
 
 string checkanagram(string str1, string str2){
@@ -72,7 +84,10 @@ int main(){
     cout << "Give the string to check for anagram: ";
     getline(cin, strcheck);
 
-    string str = checkanagram(strmain, strcheck);
+    string strmain1 = up2low(strmain);
+    string strcheck1 = up2low(strcheck);
+    string str = checkanagram(strmain1, strcheck1);
     cout << str;
+    
     return 0;
 }
