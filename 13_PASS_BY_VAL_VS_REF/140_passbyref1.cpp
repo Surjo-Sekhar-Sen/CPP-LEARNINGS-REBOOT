@@ -15,8 +15,9 @@ void change(string &str, int &value){ //PASS BY REFERENCE!!
 
 int main(){
     int a = 2;
-    string str1 = "Surjo";
+    string str1 = "SurjohhgjygKJRHQGJBJ,DVMN    ENHKGQRBMBFVJGBBMNMBFHGVE,BAFJGGDBdVVBDBM"; //FOR AVOIDING SSO, TO GET A HEAP ALLOCATION!!
     change(str1, a);
     cout << a << " " << str1 << endl;
+    cout << &a << " " << &str1 << " " << (void*)str1.data(); //FOR FINDING THE STACK ADDRESS AND HEAP ADDRESS RESPECTIVELY!! 
     return 0;
 }

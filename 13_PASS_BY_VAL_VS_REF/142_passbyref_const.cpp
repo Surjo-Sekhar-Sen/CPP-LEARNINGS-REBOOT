@@ -2,7 +2,7 @@
 using namespace std;
 
 void nochanges(const int &value){
-    // value = 1; //THIS WILL THRO AND ERROR AS WE HAVE USED CONST
+    // value = 1; //THIS WILL THROW AND ERROR AS WE HAVE USED CONST
     //WHICH MAKES IT INEDITABLE!!
     cout << value << endl;
     return;
