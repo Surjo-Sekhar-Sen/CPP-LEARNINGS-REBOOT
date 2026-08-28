@@ -7,13 +7,13 @@ void passbyrefnormal(int arr[], int size){//THIS IS PASS BY REFERENCE BY DEFAULT
     //BUT STILL POINTS TO THE SAME ADDRESS!! 
     //THIS IS WHAT WE CALL AS POINTER DECAY!!
     for(int i = 0; i <= (size-1); i++){
-        cout << arr[i] << " "; //
+        cout << arr[i] << " "; 
     }
     cout << endl;
     // cout << sizeof(arr); //THIS CANNOT BE DETERMINED AS ITS TOTAL SIZE IS UNKNOWN!!
     cout << arr << endl; //ADDRESS OF THE FIRST BLOCK -> &arr[0]!!
     cout << &arr[1] << endl; 
-    arr[2] = 30;
+    arr[2] = 30; //arr[2] = (arr + 2) -> (&arr[0] + 2*4)
     return;
 }
 
